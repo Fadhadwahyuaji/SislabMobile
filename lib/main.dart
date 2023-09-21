@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sislabmobile/add_applience.dart';
+import 'package:sislabmobile/completestatus.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,12 +13,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Sislab',
+      // navigatorKey: Get.navigatorKey,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const AddApplience(),
+      home: const CompleteStatus(),
     );
   }
 }
